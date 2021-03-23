@@ -1,0 +1,31 @@
+.card{
+	width: 200px;
+	height: 200px;
+	background-color: rgba(240,0,0,1);
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.rippleIn{
+	animation: rippleIn 2055ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.4,0.0,0.2,1);
+}
+
+@keyframes rippleIn{
+	0%{
+		border-radius: 50%;
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	50%{
+		border-radius: 50%;
+	}
+
+	100%{
+		border-radius: inherit;
+		transform: scale(1);
+		opacity: 1;
+	}
+}
