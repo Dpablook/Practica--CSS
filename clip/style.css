@@ -1,0 +1,12 @@
+body{
+	margin: 0;
+}
+
+.cont{
+	width: 600px;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+}
